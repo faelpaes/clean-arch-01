@@ -1,0 +1,26 @@
+{
+  "name": "ca1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "tsc && node ./dist/main.js",
+    "test": "tsc && jest ./dist/application",
+    "express": "tsnd --transpile-only --respawn --ignore-watch node_modules ./dist/src/infra/http/express.js",
+    "hapi": "tsnd --transpile-only --respawn --ignore-watch node_modules ./dist/src/infra/http/hapi.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/core": "^1.2.174",
+    "@swc/jest": "^0.2.20",
+    "@types/jest": "^27.4.1",
+    "jest": "^28.0.3",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "uuidv4": "^6.2.13"
+  }
+}
